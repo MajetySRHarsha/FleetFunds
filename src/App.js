@@ -14,14 +14,12 @@ function App() {
         <nav className="navbar navbar-expand-lg navbar-light fixed-top">
           <div className="container">
             <Link className="navbar-brand" to={'/information'}>
-              fleetFunds
+              fleetFunds<i class="bi bi-bank"></i>
             </Link>
             <div className="collapse navbar-collapse" id="navbarTogglerDemo02">
               <ul className="navbar-nav ml-auto">
                 <li className="nav-item">
                   <Link className="nav-link" to={'/sign-in'} role="button">
-
-
                     About
                   </Link>
                 </li>

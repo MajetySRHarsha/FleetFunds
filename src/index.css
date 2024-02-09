@@ -1,4 +1,6 @@
 @import url("https://fonts.googleapis.com/css?family=Fira+Sans:400,500,600,700,800");
+@import "~bootstrap-icons/font/bootstrap-icons.css";
+
 
 * {
   box-sizing: border-box;
@@ -100,7 +102,9 @@ html,
 }
 .float-right{
   float: right;
+  padding-right: 5px;
 }
 .float-left{
   float: left;
+  padding: 5px;
 }
