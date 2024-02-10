@@ -6,7 +6,8 @@ import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
 import Login from './components/login.component';
 import SignUp from './components/signup.component';
 import Information from './components/information.component';
-
+import MarketInfo from './components/marketInfo.component'
+import Product from './components/products.component';
 function App() {
   return (
     <Router>
@@ -19,15 +20,21 @@ function App() {
             <div className="collapse navbar-collapse" id="navbarTogglerDemo02">
               <ul className="navbar-nav ml-auto">
                 <li className="nav-item">
-                  <Link className="nav-link" to={'/sign-in'} role="button">
+                  <Link className="nav-link" to={'/information'} role="button">
                     About
                   </Link>
                 </li>
                 <li className="nav-item" style={{ marginLeft: '10px' }}>
-                  <Link className="nav-link" to={'/sign-up'} role="button">
-                    Signup
+                  <Link className="nav-link" to={'/market-info'} role="button">
+                    Market Starategies
                   </Link>
                 </li>
+                <li className="nav-item" style={{ marginLeft: '10px' }}>
+                  <Link className="nav-link" to={'/products'} role="button">
+                    Our Products
+                  </Link>
+                </li>
+
               </ul>
             </div>
             <div className="collapse navbar-collapse" id="navbarTogglerDemo02">
@@ -54,6 +61,8 @@ function App() {
               <Route path="/sign-in" element={<Login />} />
               <Route path="/sign-up" element={<SignUp />} />
               <Route path="/information" element={<Information />} />
+              <Route path="/market-info" element={<MarketInfo />} />
+              <Route path="/products" element={<Product />} />
 
             </Routes>
           </div>
