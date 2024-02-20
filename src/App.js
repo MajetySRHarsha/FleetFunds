@@ -8,7 +8,7 @@ import SignUp from './components/signup.component';
 import Information from './components/information.component';
 import MarketInfo from './components/marketInfo.component'
 import Product from './components/products.component';
-import FormDataComponent from './components/information.component';
+import FormDataComponent from './components/formdata.component'
 function App() {
   return (
     <Router>
@@ -59,12 +59,12 @@ function App() {
           <div className="">
             <Routes>
               <Route exact path="/" element={<Login />} />
-              <Route path="/sign-in" element={<Login />} />
-              <Route path="/sign-up" element={<SignUp />} />
-              <Route path="/information" element={<Information />} />
-              <Route path="/market-info" element={<MarketInfo />} />
-              <Route path="/form" element={<FormDataComponent />} />
-              <Route path="/products" element={<Product />} />
+              <Route exact path="/sign-in" element={<Login />} />
+              <Route exact path="/sign-up" element={<SignUp />} />
+              <Route exact path="/information" element={<Information />} />
+              <Route exact path="/market-info" element={<MarketInfo />} />
+              <Route exact path="/form" element={<FormDataComponent />} />
+              <Route exact path="/products" element={<Product />} />
 
             </Routes>
           </div>
