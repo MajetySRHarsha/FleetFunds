@@ -8,6 +8,7 @@ import SignUp from './components/signup.component';
 import Information from './components/information.component';
 import MarketInfo from './components/marketInfo.component'
 import Product from './components/products.component';
+import FormDataComponent from './components/information.component';
 function App() {
   return (
     <Router>
@@ -30,7 +31,7 @@ function App() {
                   </Link>
                 </li>
                 <li className="nav-item" style={{ marginLeft: '10px' }}>
-                  <Link className="nav-link" to={'/products'} role="button">
+                  <Link className="nav-link" to={'/form'} role="button">
                     Our Products
                   </Link>
                 </li>
@@ -62,6 +63,7 @@ function App() {
               <Route path="/sign-up" element={<SignUp />} />
               <Route path="/information" element={<Information />} />
               <Route path="/market-info" element={<MarketInfo />} />
+              <Route path="/form" element={<FormDataComponent />} />
               <Route path="/products" element={<Product />} />
 
             </Routes>
