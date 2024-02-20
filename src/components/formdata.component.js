@@ -36,22 +36,26 @@ class FormDataComponent extends Component {
 
     render() {
         return (
-            <form onSubmit={this.handleSubmit}>
-                {Object.keys(this.state).map((key) => (
-                    <div key={key}>
-                        <label>
-                            {key.replace(/_/g, ' ')}:
-                            <input
-                                type="text"
-                                name={key}
-                                value={this.state[key]}
-                                onChange={this.handleChange}
-                            />
-                        </label>
-                    </div>
-                ))}
-                <button type="submit">Submit</button>
-            </form>
+            <div className="auth-wrapper">
+
+                <form className="auth-inner" onSubmit={this.handleSubmit}>
+                    <h2>Please Kindly Fill out this form</h2>
+                    {Object.keys(this.state).map((key) => (
+                        <div key={key}>
+                            <label>
+                                {key.replace(/_/g, ' ')}:
+                                <input
+                                    type="text"
+                                    name={key}
+                                    value={this.state[key]}
+                                    onChange={this.handleChange}
+                                />
+                            </label>
+                        </div>
+                    ))}
+                    <button type="submit">Submit</button>
+                </form>
+            </div>
         );
     }
 }
