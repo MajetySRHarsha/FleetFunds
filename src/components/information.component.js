@@ -1,10 +1,12 @@
 // src/components/Information.js
 import React, { Component } from 'react';
-
+import bankloanimage from '../bank-loan.jpg'
+import typesloan from '../types-loan.png'
 class Information extends Component {
     render() {
         return (
             <div className="content-inner d-flex flex-column">
+
                 <h2>Financial Loan Information</h2>
                 <div className="mt-2 border border-dark">
                     <h3 className="float-left">Understanding Loans</h3><br></br>
@@ -12,7 +14,7 @@ class Information extends Component {
                 </div>
 
                 <div className="mt-2 border border-dark">
-                    <h3 className="float-left">Types of Loans</h3><br></br>
+                    <img className='p-20' src={typesloan} alt="Remote Image" />
                     <div className="float-left">
                         <ul>
                             <li><strong>Personal Loans:</strong> Unsecured loans used for personal expenses.</li>
@@ -25,9 +27,8 @@ class Information extends Component {
 
                 </div>
                 <div className="mt-2 border border-dark">
-                    <h3 className="float-left">How Banks Approve Loans</h3>
-                    <div >
-                        <p>Banks and lenders use several criteria to decide whether to approve a loan application. Some of the key factors include:</p>
+                    <h3 className="">How Banks Approve Loans</h3><br></br>
+                    <div>
                         <ul>
                             <li><strong>Credit Score:</strong> A numerical expression based on an analysis of a person's credit files, to represent the creditworthiness of an individual. A higher score increases the chances of being approved.</li>
                             <li><strong>Income and Employment:</strong> Lenders look at your income and employment history to ensure you have a stable source of income to repay the loan.</li>
